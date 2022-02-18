@@ -194,6 +194,7 @@
                         <br />
                         Once finished you can keep a permanent record by printing the generated budget.
                     </p>
+
                     <div class="col-md-5">
                         <div id="budget-planner-wrapper" class="single-service-wrapper">
                             <!-- <h3>Understand your finances.</h3>
@@ -208,301 +209,291 @@
                             </p> -->
 
                             <!-- Expense group -->
-                            <div style="margin-bottom: 50px;">
-                                <h3 style="font-size: 22px;" class="bagColor">
-                                    Income Details
-                                    <br />
-                                    <hr />
-                                </h3>
+                            <div>
+                                <button type="button" class="collapsible" style="margin-top: 20px; margin-bottom: 30px;">Income
+                                    Details</button>
+                                <div class="content">
+                                    <form class="budget-form-wrapper" id="add-income" data-html2canvas-ignore="true">
+                                        <div class="row">
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Income Source</label>
+                                                    <select name="source"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option>Net Salary and Bonuses</option>
+                                                        <option>Investment income (interest, dividends, rent)</option>
+                                                        <option>Allowances</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-                                <form class="budget-form-wrapper" id="add-income" data-html2canvas-ignore="true">
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Income Source</label>
-                                                <select name="source" class="dropdown-select searchBar form-control">
-                                                    <option>Net Salary and Bonuses</option>
-                                                    <option>Investment income (interest, dividends, rent)</option>
-                                                    <option>Allowances</option>
-                                                </select>
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Frequency</label>
+                                                    <select name="frequency"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option value="1">Weekly</option>
+                                                        <option value="2">Fortnightly</option>
+                                                        <option value="4">Monthly</option>
+                                                        <option value="52">Annually</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Amount</label>
+                                                <input type="number" min="0" name="amount"
+                                                    class="searchBar form-control" placeholder="Amount">
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Others</label>
+                                                <input class="searchBar form-control" name="other_source"
+                                                    placeholder="Other (Specify)">
+                                            </div>
+
+                                            <div class="col-sm-4 form-group">
+                                                <button id="submit-add-income" class="btn btn-primary"
+                                                    style="border-radius: 0; -webkit-appearance: none; margin-top: 10px;"><i
+                                                        class="fa fa-plus"></i> Add</button>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Frequency</label>
-                                                <select name="frequency" class="dropdown-select searchBar form-control">
-                                                    <option value="1">Weekly</option>
-                                                    <option value="2">Fortnightly</option>
-                                                    <option value="4">Monthly</option>
-                                                    <option value="52">Annually</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Amount</label>
-                                            <input type="number" min="0" name="amount" class="searchBar form-control"
-                                                placeholder="Amount">
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Others</label>
-                                            <input class="searchBar form-control" name="other_source"
-                                                placeholder="Other (Specify)">
-                                        </div>
-
-                                        <div class="col-sm-4 form-group">
-                                            <button id="submit-add-income" class="btn btn-primary"
-                                                style="border-radius: 0; -webkit-appearance: none; margin-top: 10px;"><i
-                                                    class="fa fa-plus"></i> Add</button>
-                                        </div>
-                                    </div>
-                                </form>
-
+                                    </form>
+                                </div>
                             </div>
 
                             <!-- Expense group -->
-                            <div style="margin-bottom: 50px;">
-                                <h3 style="font-size: 22px;" class="bagColor">
-                                    Motor Vehicle/Transport
-                                    <br />
-                                    <hr />
-                                </h3>
+                            <div>
+                                <button type="button" class="collapsible"
+                                    style="margin-top: 20px; margin-bottom: 30px;">Motor
+                                    Vehicle/Transport</button>
+                                <div class="content">
+                                    <form class="budget-form-wrapper" id="add-transport" data-html2canvas-ignore="true">
+                                        <div class="row">
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Source</label>
+                                                    <select name="source"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option>Registration / maintenance / repairs</option>
+                                                        <option>Fuel (Petrol etc)</option>
+                                                        <option>Public transport / taxis</option>
+                                                        <option>Parking</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-                                <form class="budget-form-wrapper" id="add-transport" data-html2canvas-ignore="true">
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Source</label>
-                                                <select name="source" class="dropdown-select searchBar form-control">
-                                                    <option>Registration / maintenance / repairs</option>
-                                                    <option>Fuel (Petrol etc)</option>
-                                                    <option>Public transport / taxis</option>
-                                                    <option>Parking</option>
-                                                </select>
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Frequency</label>
+                                                    <select name="frequency"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option value="1">Weekly</option>
+                                                        <option value="2">Fortnightly</option>
+                                                        <option value="4">Monthly</option>
+                                                        <option value="52">Annually</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Amount</label>
+                                                <input type="number" min="0" name="amount"
+                                                    class="searchBar form-control" placeholder="Amount">
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Others</label>
+                                                <input class="searchBar form-control" name="other_source"
+                                                    placeholder="Other (Specify)">
+                                            </div>
+
+                                            <div class="col-sm-4 form-group">
+                                                <button id="submit-add-transport" class="btn btn-primary"
+                                                    style="border-radius: 0; -webkit-appearance: none; margin-top: 10px;"><i
+                                                        class="fa fa-plus"></i> Add</button>
                                             </div>
                                         </div>
+                                    </form>
+                                </div>
+                            </div>
 
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Frequency</label>
-                                                <select name="frequency" class="dropdown-select searchBar form-control">
-                                                    <option value="1">Weekly</option>
-                                                    <option value="2">Fortnightly</option>
-                                                    <option value="4">Monthly</option>
-                                                    <option value="52">Annually</option>
-                                                </select>
+                            <div>
+                                <button type="button" class="collapsible" style="margin-top: 20px; margin-bottom: 30px;">Living Expenses</button>
+                                <div class="content">
+                                    <form class="budget-form-wrapper" id="add-living" data-html2canvas-ignore="true">
+                                        <div class="row">
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Source</label>
+                                                    <select name="source"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option>Rates ( water)</option>
+                                                        <option>Utilities (electricity, gas etc)</option>
+                                                        <option>Power ( diesel, petrol etc)</option>
+                                                        <option>Telephone / internet</option>
+                                                        <option>Mobile phone</option>
+                                                        <option>Home maintenance</option>
+                                                        <option>Food / groceries / household</option>
+                                                        <option>Medical and pharmaceutical</option>
+                                                        <option>Clothes / shoes</option>
+                                                        <option>Education (School Fees etc)</option>
+                                                        <option>Household purchases (furniture, electronics etc)
+                                                        </option>
+                                                        <option>Pet food / maintenance</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Frequency</label>
+                                                    <select name="frequency"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option value="1">Weekly</option>
+                                                        <option value="2">Fortnightly</option>
+                                                        <option value="4">Monthly</option>
+                                                        <option value="52">Annually</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Amount</label>
+                                                <input type="number" min="0" name="amount"
+                                                    class="searchBar form-control" placeholder="Amount">
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Others</label>
+                                                <input class="searchBar form-control" name="other_source"
+                                                    placeholder="Other (Specify)">
+                                            </div>
+
+                                            <div class="col-sm-4 form-group">
+                                                <button id="submit-add-living" class="btn btn-primary"
+                                                    style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                        class="fa fa-plus"></i> Add</button>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Amount</label>
-                                            <input type="number" min="0" name="amount" class="searchBar form-control"
-                                                placeholder="Amount">
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Others</label>
-                                            <input class="searchBar form-control" name="other_source"
-                                                placeholder="Other (Specify)">
-                                        </div>
-
-                                        <div class="col-sm-4 form-group">
-                                            <button id="submit-add-transport" class="btn btn-primary"
-                                                style="border-radius: 0; -webkit-appearance: none; margin-top: 10px;"><i
-                                                    class="fa fa-plus"></i> Add</button>
-                                        </div>
-                                    </div>
-                                </form>
-
+                                    </form>
+                                </div>
                             </div>
 
                             <!-- Expense group -->
-                            <div style="margin-bottom: 50px;">
-                                <h3 style="font-size: 22px;" class="bagColor">
-                                    Living Expenses
-                                    <br />
-                                    <hr />
-                                </h3>
+                            <div>
+                                <button type="button" class="collapsible" style="margin-top: 20px; margin-bottom: 30px;">Insurance</button>
+                                <div class="content">
+                                    <form class="budget-form-wrapper" id="add-insurance" data-html2canvas-ignore="true">
+                                        <div class="row">
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Source</label>
+                                                    <select name="source"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option>Life</option>
+                                                        <option>Health</option>
+                                                        <option>Home and contents</option>
+                                                        <option>Car</option>
+                                                        <option>Business</option>
+                                                        <option>Pension Contribution</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-                                <form class="budget-form-wrapper" id="add-living" data-html2canvas-ignore="true">
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Source</label>
-                                                <select name="source" class="dropdown-select searchBar form-control">
-                                                    <option>Rates ( water)</option>
-                                                    <option>Utilities (electricity, gas etc)</option>
-                                                    <option>Power ( diesel, petrol etc)</option>
-                                                    <option>Telephone / internet</option>
-                                                    <option>Mobile phone</option>
-                                                    <option>Home maintenance</option>
-                                                    <option>Food / groceries / household</option>
-                                                    <option>Medical and pharmaceutical</option>
-                                                    <option>Clothes / shoes</option>
-                                                    <option>Education (School Fees etc)</option>
-                                                    <option>Household purchases (furniture, electronics etc)</option>
-                                                    <option>Pet food / maintenance</option>
-                                                </select>
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Frequency</label>
+                                                    <select name="frequency"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option value="1">Weekly</option>
+                                                        <option value="2">Fortnightly</option>
+                                                        <option value="4">Monthly</option>
+                                                        <option value="52">Annually</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Amount</label>
+                                                <input type="number" min="0" name="amount"
+                                                    class="searchBar form-control" placeholder="Amount">
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Others</label>
+                                                <input class="searchBar form-control" name="other_source"
+                                                    placeholder="Other (Specify)">
+                                            </div>
+
+                                            <div class="col-sm-4 form-group">
+                                                <button id="submit-add-insurance" class="btn btn-primary"
+                                                    style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                        class="fa fa-plus"></i> Add</button>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Frequency</label>
-                                                <select name="frequency" class="dropdown-select searchBar form-control">
-                                                    <option value="1">Weekly</option>
-                                                    <option value="2">Fortnightly</option>
-                                                    <option value="4">Monthly</option>
-                                                    <option value="52">Annually</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Amount</label>
-                                            <input type="number" min="0" name="amount" class="searchBar form-control"
-                                                placeholder="Amount">
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Others</label>
-                                            <input class="searchBar form-control" name="other_source"
-                                                placeholder="Other (Specify)">
-                                        </div>
-
-                                        <div class="col-sm-4 form-group">
-                                            <button id="submit-add-living" class="btn btn-primary"
-                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
-                                                    class="fa fa-plus"></i> Add</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
 
+
                             <!-- Expense group -->
-                            <div style="margin-bottom: 50px;">
-                                <h3 style="font-size: 22px;" class="bagColor">
-                                    Insurance
-                                    <br />
-                                    <hr />
-                                </h3>
+                            <div>
+                                <button type="button" class="collapsible" style="margin-top: 20px; margin-bottom: 30px;">Rent, Loans and Credit Card</button>
+                                <div class="content">
+                                    <form class="budget-form-wrapper" id="add-credit" data-html2canvas-ignore="true">
+                                        <div class="row">
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Source</label>
+                                                    <select name="source"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option>Rent / Mortgage</option>
+                                                        <option>Personal loan repayments</option>
+                                                        <option>Credit card repayments</option>
+                                                    </select>
+                                                </div>
+                                            </div>
 
-                                <form class="budget-form-wrapper" id="add-insurance" data-html2canvas-ignore="true">
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Source</label>
-                                                <select name="source" class="dropdown-select searchBar form-control">
-                                                    <option>Life</option>
-                                                    <option>Health</option>
-                                                    <option>Home and contents</option>
-                                                    <option>Car</option>
-                                                    <option>Business</option>
-                                                    <option>Pension Contribution</option>
-                                                </select>
+                                            <div class="col-sm-6 form-group">
+                                                <div class="selector dropdown">
+                                                    <label>Frequency</label>
+                                                    <select name="frequency"
+                                                        class="dropdown-select searchBar form-control">
+                                                        <option value="1">Weekly</option>
+                                                        <option value="2">Fortnightly</option>
+                                                        <option value="4">Monthly</option>
+                                                        <option value="52">Annually</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Amount</label>
+                                                <input type="number" min="0" name="amount"
+                                                    class="searchBar form-control" placeholder="Amount">
+                                            </div>
+
+                                            <div class="col-sm-6 form-group">
+                                                <label>Others</label>
+                                                <input class="searchBar form-control" name="other_source"
+                                                    placeholder="Other (Specify)">
+                                            </div>
+
+                                            <div class="col-sm-4 form-group">
+                                                <button id="submit-add-credit" class="btn btn-primary"
+                                                    style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                        class="fa fa-plus"></i> Add</button>
                                             </div>
                                         </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Frequency</label>
-                                                <select name="frequency" class="dropdown-select searchBar form-control">
-                                                    <option value="1">Weekly</option>
-                                                    <option value="2">Fortnightly</option>
-                                                    <option value="4">Monthly</option>
-                                                    <option value="52">Annually</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Amount</label>
-                                            <input type="number" min="0" name="amount" class="searchBar form-control"
-                                                placeholder="Amount">
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Others</label>
-                                            <input class="searchBar form-control" name="other_source"
-                                                placeholder="Other (Specify)">
-                                        </div>
-
-                                        <div class="col-sm-4 form-group">
-                                            <button id="submit-add-insurance" class="btn btn-primary"
-                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
-                                                    class="fa fa-plus"></i> Add</button>
-                                        </div>
-                                    </div>
-                                </form>
-
-
-
+                                    </form>
+                                </div>
                             </div>
 
-                            <!-- Expense group -->
-                            <div style="margin-bottom: 50px;">
-                                <h3 style="font-size: 22px;" class="bagColor">
-                                    Rent, Loans and Credit Card
-                                    <br />
-                                    <hr />
-                                </h3>
-
-                                <form class="budget-form-wrapper" id="add-credit" data-html2canvas-ignore="true">
-                                    <div class="row">
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Source</label>
-                                                <select name="source" class="dropdown-select searchBar form-control">
-                                                    <option>Rent / Mortgage</option>
-                                                    <option>Personal loan repayments</option>
-                                                    <option>Credit card repayments</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <div class="selector dropdown">
-                                                <label>Frequency</label>
-                                                <select name="frequency" class="dropdown-select searchBar form-control">
-                                                    <option value="1">Weekly</option>
-                                                    <option value="2">Fortnightly</option>
-                                                    <option value="4">Monthly</option>
-                                                    <option value="52">Annually</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Amount</label>
-                                            <input type="number" min="0" name="amount" class="searchBar form-control"
-                                                placeholder="Amount">
-                                        </div>
-
-                                        <div class="col-sm-6 form-group">
-                                            <label>Others</label>
-                                            <input class="searchBar form-control" name="other_source"
-                                                placeholder="Other (Specify)">
-                                        </div>
-
-                                        <div class="col-sm-4 form-group">
-                                            <button id="submit-add-credit" class="btn btn-primary"
-                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
-                                                    class="fa fa-plus"></i> Add</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
 
                             <!-- Expense group -->
-                            <div style="margin-bottom: 50px;">
-                                <h3 style="font-size: 22px;" class="bagColor">
-                                    Taxes, Fees and Charges
-                                    <br />
-                                    <hr />
-                                </h3>
-
+                            <button type="button" class="collapsible" style="margin-top: 20px; margin-bottom: 30px;">Taxes, Fees and Charges</button>
+                            <div class="content">
                                 <form class="budget-form-wrapper" id="add-tax" data-html2canvas-ignore="true">
                                     <div class="row">
                                         <div class="col-sm-6 form-group">
@@ -549,14 +540,10 @@
 
                             </div>
 
-                            <!-- Expense group -->
-                            <div style="margin-bottom: 50px;" class="bagColor">
-                                <h3 style="font-size: 22px;">
-                                    Leisure/Entertainment
-                                    <br />
-                                    <hr />
-                                </h3>
 
+                            <!-- Expense group -->
+                            <button type="button" class="collapsible" style="margin-top: 20px; margin-bottom: 30px;">Leisure/Entertainment</button>
+                            <div class="content">
                                 <form class="budget-form-wrapper" id="add-leisure" data-html2canvas-ignore="true">
                                     <div class="row">
                                         <div class="col-sm-6 form-group">
@@ -605,95 +592,6 @@
                                 </form>
                             </div>
 
-                            <!-- Result group
-                            <div style="margin-bottom: 50px; margin-top: 350px;">
-                                <h3 style="font-size: 22px;">
-                                    Resu
-                                    <br />
-                                    <hr />
-                                </h3>
-
-                                <div style="margin:30px 0">
-                                    <table class="table table-responsive table-striped table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <th></th>
-                                                <th>Weekly (₦)</th>
-                                                <th>Fortnightly (₦)</th>
-                                                <th>Monthly (₦)</th>
-                                                <th>Annual Total (₦)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr id="add-transport-result">
-                                                <td>Motor Vehicle / Transport</td>
-                                                <td class="week-result">0.00</td>
-                                                <td class="fortnight-result">0.00</td>
-                                                <td class="month-result">0.00</td>
-                                                <td class="annual-result">0.00</td>
-                                            </tr>
-                                            <tr id="add-living-result">
-                                                <td>Living Expenses</td>
-                                                <td class="week-result">0.00</td>
-                                                <td class="fortnight-result">0.00</td>
-                                                <td class="month-result">0.00</td>
-                                                <td class="annual-result">0.00</td>
-                                            </tr>
-                                            <tr id="add-insurance-result">
-                                                <td>Insurance</td>
-                                                <td class="week-result">0.00</td>
-                                                <td class="fortnight-result">0.00</td>
-                                                <td class="month-result">0.00</td>
-                                                <td class="annual-result">0.00</td>
-                                            </tr>
-                                            <tr id="add-credit-result">
-                                                <td>Rent, Loans and Credit Card</td>
-                                                <td class="week-result">0.00</td>
-                                                <td class="fortnight-result">0.00</td>
-                                                <td class="month-result">0.00</td>
-                                                <td class="annual-result">0.00</td>
-                                            </tr>
-                                            <tr id="add-tax-result">
-                                                <td>Taxes, Fees and Charges</td>
-                                                <td class="week-result">0.00</td>
-                                                <td class="fortnight-result">0.00</td>
-                                                <td class="month-result">0.00</td>
-                                                <td class="annual-result">0.00</td>
-                                            </tr>
-                                            <tr id="add-leisure-result">
-                                                <td>Leisure / Entertainment</td>
-                                                <td class="week-result">0.00</td>
-                                                <td class="fortnight-result">0.00</td>
-                                                <td class="month-result">0.00</td>
-                                                <td class="annual-result">0.00</td>
-                                            </tr>
-                                            <tr id="add-income-result">
-                                                <td>Total Income</td>
-                                                <td class="week-result income">0.00</td>
-                                                <td class="fortnight-result income">0.00</td>
-                                                <td class="month-result income">0.00</td>
-                                                <td class="annual-result income">0.00</td>
-                                            </tr>
-                                            <tr id="expenses-result">
-                                                <td>Total Expenses</td>
-                                                <td class="week-expense">0.00</td>
-                                                <td class="fortnight-expense">0.00</td>
-                                                <td class="month-expense">0.00</td>
-                                                <td class="annual-expense">0.00</td>
-                                            </tr>
-                                            <tr id="surplus-result">
-                                                <td>Surplus/Deficit</td>
-                                                <td class="week-surplus">0.00</td>
-                                                <td class="fortnight-surplus">0.00</td>
-                                                <td class="month-surplus">0.00</td>
-                                                <td class="annual-surplus">0.00</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <button id="save-pdf" class="btn btn-default" data-html2canvas-ignore="true">Save
-                                        PDF</button>
-                                </div>
-                            </div> -->
 
                         </div>
 
@@ -879,12 +777,13 @@
                 </div>
 
                 <!-- -- Result group -->
-                <div style="margin-bottom: 50px; margin-top: 350px;">
-                    <!-- <h3 style="font-size: 22px;">
+                <div style="margin-top: 850px;">
+                    <h3 style="font-size: 22px; color: #383E7E; font-weight: bold; font-size: 48px;
+                    ">
                         Result
                         <br />
                         <hr />
-                    </h3> -->
+                    </h3>
 
                     <div style="margin:30px 0">
                         <table class="table table-responsive table-striped table-borderless">
@@ -1116,6 +1015,24 @@
         integrity="sha512-oQzeC9gIS3sN3QCshVeDWiRCC2tJbR9lqj1rolUtQkGJJeA+7L54y/DVZf0+T3NDZuLOkbInugg7dVNwvcEGow=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script type="text/javascript" src="https://bainescredit.com/js/html2canvas.min.js"></script> -->
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
 
     <script>
         $(document).on('submit', '.budget-form-wrapper', function (e) {
