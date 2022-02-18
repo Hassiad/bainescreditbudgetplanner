@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baines Credit - Budget Planner</title>
+    <meta name="_token" content="1DInOFOk65byVOvPl3nRDR6L2JhX8KTfzQXTkwAj" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!-- fav icon -->
+    <link href="/front/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+
+    <!-- Bootstrap -->
+    <link href="https://bainescredit.com/front/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animated-css -->
+    <link href="/front/assets/css/animate.min.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome-css -->
+    <link href="/front/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- owl-carrosel-css -->
+    <link href="/front/assets/owl-carrosel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="/front/assets/owl-carrosel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="/front/assets/css/revolution/layers.css">
+    <link rel="stylesheet" href="/front/assets/css/revolution/navigation.css">
+    <link rel="stylesheet" href="/front/assets/css/revolution/settings.css">
+    <!-- offcanvas-menu-css -->
+    <link href="/front/assets/css/offcanvas-menu.css" rel="stylesheet" type="text/css">
+    <!-- style-css -->
+    <link href="/front/assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/sweetalert.css">
+    <link href="https://bainescredit.com/css/ion.rangeSlider.min.css" rel="stylesheet" type="text/css">
+    <link href="https://bainescredit.com/css/jquery-radiocharm.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .loan,
+        .loan:hover {
+            display: inline !important;
+            padding: 10px !important;
+            border-radius: 25px !important;
+            color: #fff !important;
+            font-size: 12px;
+        }
+
+        .loan-danger:hover {
+            background-color: #850100 !important;
+        }
+
+        .loan-success:hover {
+            background-color: #38a7cc !important;
+        }
+
+        .contact-bar li a:hover {
+            color: #38a7cc;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148327628-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148327628-1');
+    </script>
+</head>
+
+<body class="homePageFive">
+    <!-- start preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- end preloader -->
+
+
+    <header class="header-section">
+        <div class="topper">
+            <div class="top-bar" style="padding: 10px 40px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="contact-bar" style="display: block; text-align: center;">
+                                <li style="display: inline-block; margin-right: 15px; margin-left: 15px">
+                                    <a target="_blank" href="https://ibank.mybankone.com/BainesCredit/">Online
+                                        Banking</a>
+                                </li>
+
+                                <li style="display: inline-block; margin-right: 15px; margin-left: 15px">
+                                    <a href="https://bainescredit.com/services/loans">Loans</a>
+                                </li>
+
+                                <li style="display: inline-block; margin-right: 15px; margin-left: 15px">
+                                    <a href="https://bainescredit.com/services/savings">Savings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- top-bar -->
+        </div> <!-- topper -->
+
+
+        <nav class="navbar navbar-inverse hidden-sm hidden-xs">
+            <div class="container-fluid" style="padding: 0 20px;">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
+                        <img src="/front/assets/images/logo.png" width="230" alt="image">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+
+
+
+                        <li class="dropdown"><a href="#">Services <i class="fa fa-angle-down"
+                                    aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="https://bainescredit.com/services/loans">Loans</a></li>
+
+                                <li>
+                                    <a href="https://bainescredit.com/services/savings">Savings</a>
+                                </li>
+                                <li><a href="https://bainescredit.com/services/investment">Investments</a></li>
+                                <li><a href="https://bainescredit.com/services/e-channel">E-Channels</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="dropdown">
+                            <a href="#">Tools <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://bainescredit.com/loan-calculator">Loan Calculator</a></li>
+                                <li><a href="https://bainescredit.com/budget-planner">Budget Planner</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown"><a href="#">About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="https://bainescredit.com/about">Our Company</a></li>
+                                <li><a href="https://bainescredit.com/partners">Our Partners</a></li>
+                                <li><a href="https://bainescredit.com/faq">FAQ</a></li>
+                                <li><a href="https://bainescredit.com/career">Career</a></li>
+                                <li><a href="https://bainescredit.com/blog">News</a></li>
+
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#loanModal"
+                                class="btn btn-primary btn-xs text-uppercase loan">Quick Loans</a>
+                        </li>
+
+
+
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://ibank.mybankone.com/BainesCredit/"
+                                class="btn btn-danger btn-xs text-uppercase loan loan-danger"><i class="fa fa-lock"></i>
+                                Internet Banking</a>
+                        </li>
+                        <li>
+                            <a href="https://bainescredit.com/loan-calculator"
+                                class="btn btn-primary btn-xs text-uppercase loan">Apply for Loan</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> <!-- header-section -->
+
+
+    <div class="subPage" style="margin-top: 50px;">
+        <section class="header-title section-padding">
+            <div class="container text-center">
+                <span class="sub-title">Financial Tools</span>
+                <h2 class="title">Loan Calculator</h2>
+            </div>
+        </section> <!-- header-title -->
+    </div>
+
+    <section class="service-page-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="side-bar">
+                        <ul class="page-list text-left">
+                            <li class="active">
+                                <a href="#">Loan Calculator</a>
+                            </li>
+                            <li class="">
+                                <a href="https://bainescredit.com/budget-planner">Budget Planner</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div id="budget-planner-wrapper" class="single-service-wrapper">
+                        <h3 class="text-center">Calculate Loans</h3>
+
+
+                        <!-- Expense group -->
+                        <div style="margin-bottom: 50px;">
+
+                            <form class="budget-form-wrapper" action="https://bainescredit.com/open-account"
+                                style="background-color: #eff;">
+                                <div class="row">
+
+                                    <div class="col-md-10 col-md-offset-1 row">
+                                        <div style="margin: 20px auto; width: 250px;">
+                                            <input name="type" value="4.5" data-name="personal"
+                                                class="loan-type personal col-sm-6" checked
+                                                data-radiocharm-background-color="006cfa"
+                                                data-radiocharm-label="Personal Loan" type="radio" />
+                                            <input name="type" value="5" data-name="sme" class="loan-type sme col-sm-6"
+                                                data-radiocharm-label="SME Loan"
+                                                data-radiocharm-background-color="006cff" type="radio" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10 col-md-offset-1 row">
+                                        <div class="col-sm-12 form-group">
+                                            <input type="number" id="amount-slider" name="amount" value="0" />
+                                        </div>
+                                        <div class="col-sm-6 form-group" style="padding-top: 20px;">
+                                            <label style="text-transform: uppercase;">Choose Amount</label>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <input type="number" id="amount-holder" value="100000"
+                                                class="searchBar form-control" placeholder="Amount" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10 col-md-offset-1 row">
+                                        <div class="col-sm-12 form-group">
+                                            <input type="number" id="term-slider" name="term" value="0" />
+                                        </div>
+                                        <div class="col-sm-6 form-group" style="padding-top: 5px;">
+                                            <label style="text-transform: uppercase;">Choose Term</label>
+                                        </div>
+                                        <div class="col-sm-6 form-group">
+                                            <p style="font-weight: bold; color: #0d0b40;"><span style="font-size: 25px;"
+                                                    id="loan-term">1</span> &nbsp;&nbsp; Month(s)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10 col-md-offset-1 row">
+
+                                        <div class="col-sm-12 form-group" style="padding-top: 5px; text-align: center;">
+                                            <hr />
+                                        </div>
+                                        <div class="col-sm-6 form-group" style="padding-top: 5px; text-align: center;">
+                                            <label style="text-transform: uppercase;">Monthly Installments</label>
+                                            <p style="padding-top: 20px;">
+                                                ₦<span id="monthly-installments"
+                                                    style="font-size: 28px; font-weight: bold;"></span>
+                                            </p>
+
+                                        </div>
+                                        <div class="col-sm-6 form-group" style="padding-top: 5px; text-align: center;">
+                                            <label style="text-transform: uppercase;">Total Repayments</label>
+                                            <p style="padding-top: 20px;">
+                                                ₦<span id="total-repayments"
+                                                    style="font-size: 28px; font-weight: bold;"></span>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="text-right" style="background-color: #fff !important; padding-top: 10px;">
+                                    <button type="submit" class="btn btn-default">Next <i
+                                            class="fa fa-arrow-right"></i></button>
+                                </div>
+                            </form>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- service-page-section -->
+
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="footer-wrapper">
+                            <img src="/front/assets/images/logo-m.png" alt="" width="250px">
+
+                            <ul class="location">
+                                <li><i class="fa fa-building" aria-hidden="true"></i>
+                                    <div class="content">
+                                        22, Norman Williams Street, SouthWest Ikoyi
+                                    </div>
+                                </li>
+
+                                <li><i class="fa fa-mobile-phone" style="font-size: 28px !important;"
+                                        aria-hidden="true"></i>
+                                    <div class="content">
+                                        09031111888
+                                    </div>
+                                </li>
+
+                                <li><i class="fa fa-calendar-plus-o" aria-hidden="true"></i>
+                                    <div class="content">
+                                        Working Hours: <br> Mon-Fri (8am - 5pm)
+                                    </div>
+                                </li>
+                            </ul>
+                        </div> <!-- footer-wrapper -->
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="footer-wrapper">
+                            <h3>About</h3>
+
+                            <p>
+                                We are a financial institution whose Primary aim is to offer a broad range of financial
+                                services
+                                to micro, small and medium-sized enterprises and to other clients in the corporate
+                                sector,
+                                incorporated as a limited liability company on April 1 2016 and formally commenced
+                                business
+                                on June 10, 2016.
+                            </p>
+
+                            <ul class="social-icon">
+                                <li><a target="_blank" href="https://web.facebook.com/bainescredit/"><i
+                                            class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a target="_blank" href="https://twitter.com/bainescredit"><i class="fa fa-twitter"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a target="_blank"
+                                        href="https://www.linkedin.com/company/baines-credit-microfinance-bank-ltd-/"><i
+                                            class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/bainescredit/"><i
+                                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div> <!-- footer-wrapper -->
+                    </div>
+
+                    <div class="col-md-3 col-md-offset-1 col-sm-4">
+                        <div class="footer-wrapper last-wrapper">
+                            <h3>Download our app</h3>
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=com.appzonegroup.internetbanking.bainescredit">
+                                        <img src="/front/assets/images/play-store.png" />
+                                    </a>
+                                    <a href="https://apps.apple.com/us/app/baines-credit/id1484476423">
+                                        <img src="/front/assets/images/app-store.png" />
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div> <!-- footer-wrapper -->
+                    </div>
+                </div>
+            </div>
+        </div> <!-- footer-container -->
+
+
+        <div class="copy-right text-center">
+            <div class="container">
+                <p> © 2022 Baines Credit Microfinance Bank Ltd. |
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+            </div>
+        </div> <!-- copy-right -->
+    </footer> <!-- footer-section -->
+
+
+    <!-- Off-Canvas View Only -->
+    <span class="menu-toggle navbar visible-xs visible-sm"><i class="fa fa-bars" style="background-color: transparent;"
+            aria-hidden="true"></i></span>
+
+    <div id="offcanvas-menu" class="visible-xs visible-sm"
+        style="background: #12436f !important; overflow-y: scroll; overflow-x: auto;">
+
+        <span class="close-menu"><i class="fa fa-times" aria-hidden="true"></i></span>
+
+        <ul class="menu-wrapper" style="height: auto !important; ">
+            <li><a class="" href="/">Home <i class="fa fa-angle-down" aria-hidden="true"></i></a></li><!-- end of li -->
+
+            <li><a href="https://bainescredit.com/about">About</a></li><!-- end of li -->
+
+
+            <li>
+                <a class="dropmenu" href="#">Our Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropDown sub-menu">
+                    <li><a href="https://bainescredit.com/services/loans">Loans</a></li>
+                    <li><a href="https://bainescredit.com/services/savings">Savings</a></li>
+                    <li><a href="https://bainescredit.com/services/investment">Investments</a></li>
+                    <li><a href="https://bainescredit.com/services/e-channel">E-Channels</a></li>
+                </ul><!-- end of dropdown -->
+            </li>
+            <!-- end of li -->
+
+            <li>
+                <a class="dropmenu" href="#">About <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropDown sub-menu">
+                    <li><a href="https://bainescredit.com/about">Our Company</a></li>
+                    <li><a href="https://bainescredit.com/partners">Our Partners</a></li>
+                    <li><a href="https://bainescredit.com/faq">FAQ</a></li>
+                    <li><a href="https://bainescredit.com/career">Career</a></li>
+                    <li><a href="https://bainescredit.com/blog">News</a></li>
+                </ul><!-- end of dropdown -->
+            </li>
+            <!-- end of li -->
+
+            <li>
+                <a class="dropmenu" href="#">Financial Tools <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropDown sub-menu">
+                    <li><a href="https://bainescredit.com/loan-calculator">Loan Calculator</a></li>
+                    <li><a href="https://bainescredit.com/budget-planner">Budget Planner</a></li>
+                </ul><!-- end of dropdown -->
+            </li>
+            <li><a href="#" data-toggle="modal" data-target="#loanModal">Quick Loans</a></li>
+            <!-- end of line -->
+
+            <li><a href="https://bainescredit.com/partners">Our Partners</a></li>
+            <li><a href="https://bainescredit.com/faq">FAQ</a></li>
+            <li><a href="https://bainescredit.com/career">Career</a></li>
+
+        </ul> <!-- menu-wrapper -->
+        <div style="margin: 20px 30px; width: 100%;">
+            <a style="padding: 0 auto;" href="#" data-toggle="modal" data-target="#loanModal"
+                class="btn btn-danger text-uppercase text-center">
+                <i class="fa fa-money" aria-hidden="true"></i> Quick Loan
+            </a>
+            <br />
+            <br />
+            <a style="padding: 0 auto;" href="https://bainescredit.com/loan-calculator"
+                class="btn btn-info text-uppercase text-center">
+                <i class="fa fa-file" aria-hidden="true"></i> Apply for Loan
+            </a>
+            <br />
+            <br />
+            <a style="padding: 0 auto;" href="https://bainescredit.com/loan/repay"
+                class="btn btn-info dark-info text-uppercase text-center">
+                <i class="fa fa-money" aria-hidden="true"></i> Loan Repayment
+            </a>
+            <br />
+            <br />
+            <a style="padding: 0 auto;" href="https://ibank.mybankone.com/BainesCredit/" target="_blank"
+                class="btn btn-danger text-uppercase text-center">
+                <i class="fa fa-lock" aria-hidden="true"></i> Internet Banking
+            </a>
+        </div>
+    </div>
+    <!-- Off-Canvas View Only -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="loanModal" tabindex="-1" role="dialog" aria-labelledby="myLoanModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myLoanModal">Select Loan Range</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="" style="width: 80%; margin: 0 auto;">
+                        <a href="//loans.bainescredit.com" target="_blank" class="btn btn-block btn-info">₦1,000 -
+                            ₦5,000</a>
+                        <a href="//salaryloans.bainescredit.com" target="_blank"
+                            class="btn btn-block btn-success">₦20,000 to ₦100,000</a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toTop" class="hidden-xs">
+        <i class="fa fa-chevron-up"></i>
+    </div> <!-- totop -->
+
+    <style>
+        .dark-info {
+            background-color: #4674da;
+            border-color: #4674da;
+        }
+
+        .dark-info:hover {
+            background-color: #3B4B97;
+            border-color: #3B4B97;
+        }
+    </style>
+
+    <script src="/front/assets/js/jquery.js"></script>
+    <script src="/front/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/front/assets/js/jquery.inview.min.js"></script>
+    <script src="/front/assets/js/portfolio.js"></script>
+    <script src="/front/assets/js/wow.js"></script>
+    <script src="/front/assets/js/lightbox.js"></script>
+    <script src="/front/assets/owl-carrosel/owl.carousel.min.js"></script>
+    <script src="/front/assets/js/jquery-ui.js"></script>
+
+
+
+    <!-- Revolution Slider -->
+    <script src="/front/assets/revolution/jquery.themepunch.revolution.min.js"></script>
+    <script src="/front/assets/revolution/jquery.themepunch.tools.min.js"></script>
+
+    <!-- Revolution Extensions -->
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+        src="/front/assets/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="/front/assets/revolution/extensions/revolution.extension.video.min.js"></script>
+
+    <script src="/js/sweetalert.min.js"></script>
+
+    <script src="/front/assets/js/script.js"></script>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://bainescredit.com/js/jquery-radiocharm.js"></script>
+    <script type="text/javascript" src="https://bainescredit.com/js/ion.rangeSlider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.loan-type').radiocharm();
+        });
+    </script>
+
+    <script type="text/javascript">
+        let term_slider = $("#term-slider");
+        let amount_slider = $("#amount-slider");
+        let amount_holder = $("#amount-holder");
+
+        term_slider.ionRangeSlider({
+            skin: 'round',
+            min: 1,
+            max: 12,
+            postfix: ' months'
+        });
+
+        //let $term_slider = term_slider.data("ionRangeSlider");
+
+        amount_slider.ionRangeSlider({
+            skin: 'round',
+            min: 50000,
+            max: 1000000,
+            prefix: '₦',
+            grid: true,
+            step: 10000,
+            grid_snap: true,
+            decorate_both: true,
+            from_percent: 10,
+            to_percent: 90,
+        });
+
+        calculateLoan(parseInt($('input[name=type]:checked').val()));
+
+        let current_to = 1000000;
+
+        $(document).on('change click keyup', '#term-slider, #amount-slider, #amount-holder, .loan-type', function (e) {
+
+            let interacted = $(this);
+
+            if (interacted.attr('id') === 'amount-holder') {
+                let amount_slider_instance = amount_slider.data("ionRangeSlider");
+                let amount_held = parseInt(interacted.val());
+
+                if (amount_held < 50000) { return; }
+
+                amount_slider_instance.update({
+                    from: parseInt(interacted.val())
+                });
+            }
+
+            let type_input = $('input[name=type]:checked');
+            let loan_value = parseInt(type_input.val());
+
+            console.log(type_input.hasClass('sme'));
+
+            if (type_input.hasClass('sme') && current_to < 5000000) {
+                let amount_slider_instance = amount_slider.data("ionRangeSlider");
+
+                current_to = 5000000;
+                amount_slider_instance.update({
+                    skin: 'round',
+                    min: 100000,
+                    max: current_to,
+                    prefix: '₦',
+                    grid: true,
+                    step: 10000,
+                    grid_snap: false,
+                    decorate_both: true,
+                    from_percent: 10,
+                    to_percent: 90,
+                });
+            }
+
+            if (type_input.hasClass('personal') && current_to > 1000000) {
+                let amount_slider_instance = amount_slider.data("ionRangeSlider");
+
+                current_to = 1000000;
+                amount_slider_instance.update({
+                    skin: 'round',
+                    min: 50000,
+                    max: current_to,
+                    prefix: '₦',
+                    grid: true,
+                    step: 10000,
+                    grid_snap: true,
+                    decorate_both: true,
+                    from_percent: 10,
+                    to_percent: 90,
+                });
+            }
+
+            amount_holder.val(amount_slider.val());
+            $('#loan-term').html(term_slider.val());
+
+            if (!isNaN(loan_value))
+                calculateLoan(loan_value);
+            else
+                calculateLoan(4.5)
+        });
+
+        function calculateLoan(interest) {
+            let _total = ((interest / 100 * parseInt(amount_holder.val())) * parseInt(term_slider.val())) + parseInt(amount_holder.val());
+            let _month = (_total / parseInt(term_slider.val()));
+
+            $('#monthly-installments').html(_month.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            $('#total-repayments').html(_total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        }
+    </script>
+
+    <!--Start of Zendesk Chat Script-->
+    <script type="text/javascript">
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) {
+                z._.push(c)
+            }, $ = z.s =
+                d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+                    z.set.
+                    _.push(o)
+                }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute('charset', 'utf-8');
+            $.src = 'https://v2.zopim.com/?3ct8LJ0jAytNg64Qxu189OnbjCrH3yGw'; z.t = +new Date; $.
+                type = 'text/javascript'; e.parentNode.insertBefore($, e)
+        })(document, 'script');
+    </script>
+    <!--End of Zendesk Chat Script-->
+
+</body>
+
+</html>

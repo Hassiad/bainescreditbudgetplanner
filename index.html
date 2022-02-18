@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baines Credit - Budget Planner</title>
+    <meta name="_token" content="lNt1Irgkgfgd0dRzeP59gHvnuep2XPMMD9Nje2Rg" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!-- fav icon -->
+    <link href="/front/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+
+    <!-- Bootstrap -->
+    <link href="/front/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animated-css -->
+    <link href="/front/assets/css/animate.min.css" rel="stylesheet" type="text/css">
+    <!-- font-awesome-css -->
+    <link href="/front/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- owl-carrosel-css -->
+    <link href="/front/assets/owl-carrosel/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="/front/assets/owl-carrosel/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" href="/front/assets/css/revolution/layers.css">
+    <link rel="stylesheet" href="/front/assets/css/revolution/navigation.css">
+    <link rel="stylesheet" href="/front/assets/css/revolution/settings.css">
+    <!-- offcanvas-menu-css -->
+    <link href="/front/assets/css/offcanvas-menu.css" rel="stylesheet" type="text/css">
+    <!-- style-css -->
+    <link href="/front/assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/css/sweetalert.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .loan,
+        .loan:hover {
+            display: inline !important;
+            padding: 10px !important;
+            border-radius: 25px !important;
+            color: #fff !important;
+            font-size: 12px;
+        }
+
+        .loan-danger:hover {
+            background-color: #850100 !important;
+        }
+
+        .loan-success:hover {
+            background-color: #38a7cc !important;
+        }
+
+        .contact-bar li a:hover {
+            color: #38a7cc;
+        }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
+
+</head>
+
+<body class="homePageFive">
+    <!-- start preloader -->
+    <!-- <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div> -->
+    <!-- end preloader -->
+
+    <header>
+        <div class="header-section" style="background-color: white;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 col-md-12">
+                        <div class="header-widget">
+                            <ul>
+                                <li style="color: darkblue;"><i class="icofont-clock-time"></i>Opening Hours: Mon - Fri,
+                                    08:00AM - 05:00PM</li>
+                                <!--<li><i class="icofont-location-pin"></i> 22, Norman Williams Street, Ikoyi</li>
+                                <li><i class="icofont-phone"></i> <a href="tel:+2349031111888">+2349031111888</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="header-social text-end">
+                            <ul>
+                                <li><a target="_blank" href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="icofont-twitter"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="icofont-linkedin"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="icofont-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-area">
+            <div class="mobile-nav">
+                <a routerLink="/" class="logo">
+                    <img src="assets/img/BainesCredit2.png" class="img-fluid" alt="logo">
+                </a>
+            </div>
+
+            <div class="main-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/BainesCredit2.png" class="img-fluid" alt="logo">
+                        </a>
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"
+                            style="color:white;">
+                            <ul class="navbar-nav ms-auto" style="color:white;">
+
+
+                                <li class="nav-item"><a routerLink="." class="nav-link" routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{exact: true}" style="color:white;">Home</a></li>
+
+
+
+                                <li class="nav-item"><a routerLink="." class="nav-link" routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{exact: true}">Payment</a></li>
+
+                                <li class="nav-item"><a routerLink="." class="nav-link" routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{exact: true}">Loans</a></li>
+
+                                <li class="nav-item"><a routerLink="." class="nav-link" routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{exact: true}">Contact</a></li>
+                            </ul>
+
+                            <div class="navbar-button">
+                                <a routerLink=".">Internet Banking</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-lg-12">
+                <img src="assets/img/AccountCreationHeader.png" class="img-fluid" alt="bainescredit"  />
+            </div>
+        </div> -->
+    </header>
+
+    <section class="service-page-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h3>Understand your finances.</h3>
+
+                    <p data-html2canvas-ignore="true" style="font-size: 17px;">
+                        The Budget Planner Calculator helps you get a better understanding of your finances.
+                        <br />
+                        <br />
+                        Enter the required information and Click the "Add" button to add an expense/income in
+                        each
+                        section.
+                        <br />
+                        <br />
+                        Once finished you can keep a permanent record by printing the generated budget.
+                    </p>
+                    <div class="col-md-5">
+                        <div id="budget-planner-wrapper" class="single-service-wrapper">
+                            <!-- <h3>Understand your finances.</h3>
+
+                            <p data-html2canvas-ignore="true">
+                                The Budget Planner Calculator helps you get a better understanding of your finances.
+                                <br />
+                                <br />
+                                Enter the required information and Click the "Add" button to add an expense/income in
+                                each
+                                section. Once finished you can keep a permanent record by printing the generated budget.
+                            </p> -->
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;">
+                                <h3 style="font-size: 22px;" class="bagColor">
+                                    Income Details
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-income" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Income Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Net Salary and Bonuses</option>
+                                                    <option>Investment income (interest, dividends, rent)</option>
+                                                    <option>Allowances</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-income" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: 10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;">
+                                <h3 style="font-size: 22px;" class="bagColor">
+                                    Motor Vehicle/Transport
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-transport" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Registration / maintenance / repairs</option>
+                                                    <option>Fuel (Petrol etc)</option>
+                                                    <option>Public transport / taxis</option>
+                                                    <option>Parking</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-transport" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: 10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;">
+                                <h3 style="font-size: 22px;" class="bagColor">
+                                    Living Expenses
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-living" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Rates ( water)</option>
+                                                    <option>Utilities (electricity, gas etc)</option>
+                                                    <option>Power ( diesel, petrol etc)</option>
+                                                    <option>Telephone / internet</option>
+                                                    <option>Mobile phone</option>
+                                                    <option>Home maintenance</option>
+                                                    <option>Food / groceries / household</option>
+                                                    <option>Medical and pharmaceutical</option>
+                                                    <option>Clothes / shoes</option>
+                                                    <option>Education (School Fees etc)</option>
+                                                    <option>Household purchases (furniture, electronics etc)</option>
+                                                    <option>Pet food / maintenance</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-living" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;">
+                                <h3 style="font-size: 22px;" class="bagColor">
+                                    Insurance
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-insurance" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Life</option>
+                                                    <option>Health</option>
+                                                    <option>Home and contents</option>
+                                                    <option>Car</option>
+                                                    <option>Business</option>
+                                                    <option>Pension Contribution</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-insurance" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+
+                            </div>
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;">
+                                <h3 style="font-size: 22px;" class="bagColor">
+                                    Rent, Loans and Credit Card
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-credit" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Rent / Mortgage</option>
+                                                    <option>Personal loan repayments</option>
+                                                    <option>Credit card repayments</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-credit" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;">
+                                <h3 style="font-size: 22px;" class="bagColor">
+                                    Taxes, Fees and Charges
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-tax" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Fees and duties</option>
+                                                    <option>Tax on investments</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-tax" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                            <!-- Expense group -->
+                            <div style="margin-bottom: 50px;" class="bagColor">
+                                <h3 style="font-size: 22px;">
+                                    Leisure/Entertainment
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <form class="budget-form-wrapper" id="add-leisure" data-html2canvas-ignore="true">
+                                    <div class="row">
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Source</label>
+                                                <select name="source" class="dropdown-select searchBar form-control">
+                                                    <option>Holidays</option>
+                                                    <option>Restaurants, outings, takeaway</option>
+                                                    <option>Sports / hobbies / memberships</option>
+                                                    <option>Newspapers / magazines / books / CDs</option>
+                                                    <option>Gifts (xmas, birthdays)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <div class="selector dropdown">
+                                                <label>Frequency</label>
+                                                <select name="frequency" class="dropdown-select searchBar form-control">
+                                                    <option value="1">Weekly</option>
+                                                    <option value="2">Fortnightly</option>
+                                                    <option value="4">Monthly</option>
+                                                    <option value="52">Annually</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Amount</label>
+                                            <input type="number" min="0" name="amount" class="searchBar form-control"
+                                                placeholder="Amount">
+                                        </div>
+
+                                        <div class="col-sm-6 form-group">
+                                            <label>Others</label>
+                                            <input class="searchBar form-control" name="other_source"
+                                                placeholder="Other (Specify)">
+                                        </div>
+
+                                        <div class="col-sm-4 form-group">
+                                            <button id="submit-add-leisure" class="btn btn-primary"
+                                                style="border-radius: 0; -webkit-appearance: none; margin-top: -10px;"><i
+                                                    class="fa fa-plus"></i> Add</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Result group
+                            <div style="margin-bottom: 50px; margin-top: 350px;">
+                                <h3 style="font-size: 22px;">
+                                    Resu
+                                    <br />
+                                    <hr />
+                                </h3>
+
+                                <div style="margin:30px 0">
+                                    <table class="table table-responsive table-striped table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Weekly (₦)</th>
+                                                <th>Fortnightly (₦)</th>
+                                                <th>Monthly (₦)</th>
+                                                <th>Annual Total (₦)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="add-transport-result">
+                                                <td>Motor Vehicle / Transport</td>
+                                                <td class="week-result">0.00</td>
+                                                <td class="fortnight-result">0.00</td>
+                                                <td class="month-result">0.00</td>
+                                                <td class="annual-result">0.00</td>
+                                            </tr>
+                                            <tr id="add-living-result">
+                                                <td>Living Expenses</td>
+                                                <td class="week-result">0.00</td>
+                                                <td class="fortnight-result">0.00</td>
+                                                <td class="month-result">0.00</td>
+                                                <td class="annual-result">0.00</td>
+                                            </tr>
+                                            <tr id="add-insurance-result">
+                                                <td>Insurance</td>
+                                                <td class="week-result">0.00</td>
+                                                <td class="fortnight-result">0.00</td>
+                                                <td class="month-result">0.00</td>
+                                                <td class="annual-result">0.00</td>
+                                            </tr>
+                                            <tr id="add-credit-result">
+                                                <td>Rent, Loans and Credit Card</td>
+                                                <td class="week-result">0.00</td>
+                                                <td class="fortnight-result">0.00</td>
+                                                <td class="month-result">0.00</td>
+                                                <td class="annual-result">0.00</td>
+                                            </tr>
+                                            <tr id="add-tax-result">
+                                                <td>Taxes, Fees and Charges</td>
+                                                <td class="week-result">0.00</td>
+                                                <td class="fortnight-result">0.00</td>
+                                                <td class="month-result">0.00</td>
+                                                <td class="annual-result">0.00</td>
+                                            </tr>
+                                            <tr id="add-leisure-result">
+                                                <td>Leisure / Entertainment</td>
+                                                <td class="week-result">0.00</td>
+                                                <td class="fortnight-result">0.00</td>
+                                                <td class="month-result">0.00</td>
+                                                <td class="annual-result">0.00</td>
+                                            </tr>
+                                            <tr id="add-income-result">
+                                                <td>Total Income</td>
+                                                <td class="week-result income">0.00</td>
+                                                <td class="fortnight-result income">0.00</td>
+                                                <td class="month-result income">0.00</td>
+                                                <td class="annual-result income">0.00</td>
+                                            </tr>
+                                            <tr id="expenses-result">
+                                                <td>Total Expenses</td>
+                                                <td class="week-expense">0.00</td>
+                                                <td class="fortnight-expense">0.00</td>
+                                                <td class="month-expense">0.00</td>
+                                                <td class="annual-expense">0.00</td>
+                                            </tr>
+                                            <tr id="surplus-result">
+                                                <td>Surplus/Deficit</td>
+                                                <td class="week-surplus">0.00</td>
+                                                <td class="fortnight-surplus">0.00</td>
+                                                <td class="month-surplus">0.00</td>
+                                                <td class="annual-surplus">0.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button id="save-pdf" class="btn btn-default" data-html2canvas-ignore="true">Save
+                                        PDF</button>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div style="margin-left: 50px; " class="col-md-6">
+                        <div style="margin:30px 0; ">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="add-income-wrapper">
+
+                                </tbody>
+
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-income-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+                        </div>
+
+                        <div style="margin:30px 0">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody id="add-transport-wrapper">
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-transport-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div style="margin:30px 0">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody id="add-living-wrapper">
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-living-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div style="margin:30px 0">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody id="add-insurance-wrapper">
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-insurance-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div style="margin:30px 0">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody id="add-credit-wrapper">
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-credit-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div style="margin:30px 0">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody id="add-tax-wrapper">
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-tax-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                        <div style="margin:30px 0">
+                            <table class="table table-responsive table-striped table-borderless">
+                                <!-- <thead>
+                                    <tr>
+                                        <th>Source</th>
+                                        <th>Frequency</th>
+                                        <th>Amount (₦)</th>
+                                        <th>Annual Amount (₦)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead> -->
+                                <tbody id="add-leisure-wrapper">
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="3">Total</th>
+                                        <th colspan="2" id="add-leisure-total"
+                                            style="background-color: deepskyblue;color: #fff !important;">0.00</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- -- Result group -->
+                <div style="margin-bottom: 50px; margin-top: 350px;">
+                    <!-- <h3 style="font-size: 22px;">
+                        Result
+                        <br />
+                        <hr />
+                    </h3> -->
+
+                    <div style="margin:30px 0">
+                        <table class="table table-responsive table-striped table-borderless">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Weekly (₦)</th>
+                                    <th>Fortnightly (₦)</th>
+                                    <th>Monthly (₦)</th>
+                                    <th>Annual Total (₦)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="add-transport-result">
+                                    <td>Motor Vehicle / Transport</td>
+                                    <td class="week-result">0.00</td>
+                                    <td class="fortnight-result">0.00</td>
+                                    <td class="month-result">0.00</td>
+                                    <td class="annual-result">0.00</td>
+                                </tr>
+                                <tr id="add-living-result">
+                                    <td>Living Expenses</td>
+                                    <td class="week-result">0.00</td>
+                                    <td class="fortnight-result">0.00</td>
+                                    <td class="month-result">0.00</td>
+                                    <td class="annual-result">0.00</td>
+                                </tr>
+                                <tr id="add-insurance-result">
+                                    <td>Insurance</td>
+                                    <td class="week-result">0.00</td>
+                                    <td class="fortnight-result">0.00</td>
+                                    <td class="month-result">0.00</td>
+                                    <td class="annual-result">0.00</td>
+                                </tr>
+                                <tr id="add-credit-result">
+                                    <td>Rent, Loans and Credit Card</td>
+                                    <td class="week-result">0.00</td>
+                                    <td class="fortnight-result">0.00</td>
+                                    <td class="month-result">0.00</td>
+                                    <td class="annual-result">0.00</td>
+                                </tr>
+                                <tr id="add-tax-result">
+                                    <td>Taxes, Fees and Charges</td>
+                                    <td class="week-result">0.00</td>
+                                    <td class="fortnight-result">0.00</td>
+                                    <td class="month-result">0.00</td>
+                                    <td class="annual-result">0.00</td>
+                                </tr>
+                                <tr id="add-leisure-result">
+                                    <td>Leisure / Entertainment</td>
+                                    <td class="week-result">0.00</td>
+                                    <td class="fortnight-result">0.00</td>
+                                    <td class="month-result">0.00</td>
+                                    <td class="annual-result">0.00</td>
+                                </tr>
+                                <tr id="add-income-result">
+                                    <td>Total Income</td>
+                                    <td class="week-result income">0.00</td>
+                                    <td class="fortnight-result income">0.00</td>
+                                    <td class="month-result income">0.00</td>
+                                    <td class="annual-result income">0.00</td>
+                                </tr>
+                                <tr id="expenses-result">
+                                    <td>Total Expenses</td>
+                                    <td class="week-expense">0.00</td>
+                                    <td class="fortnight-expense">0.00</td>
+                                    <td class="month-expense">0.00</td>
+                                    <td class="annual-expense">0.00</td>
+                                </tr>
+                                <tr id="surplus-result">
+                                    <td>Surplus/Deficit</td>
+                                    <td class="week-surplus">0.00</td>
+                                    <td class="fortnight-surplus">0.00</td>
+                                    <td class="month-surplus">0.00</td>
+                                    <td class="annual-surplus">0.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="save-pdf" class="btn btn-default" data-html2canvas-ignore="true">Save
+                            PDF</button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- service-page-section -->
+
+    <footer>
+        <div class="contact-section">
+            <img src="assets/img/PartnersLogo.png" class="img-fluid" alt="logo">
+        </div>
+
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <div class="logo">
+                                <a routerLink="/">
+                                    <img src="assets/img/BainesCredit2.png" class="img-fluid" alt="logo">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><img src="assets/img/apple.png" class="img-fluid" /></div>
+                                <div class="col-md-6"><img src="assets/img/google.png" class="img-fluid" /></div>
+                            </div>
+                            <div class="row" style="margin-top: 20px !important;">
+
+                                <div class="footer-socialn">
+                                    <a href="#" target="_blank"><i class="icofont-facebook"
+                                            style="color: white; font-size: x-large;"></i></a> &nbsp;
+                                    <a href="#" target="_blank"><i class="icofont-twitter"
+                                            style="color: white; font-size: x-large;"></i></a>&nbsp;
+                                    <a href="#" target="_blank"><i class="icofont-linkedin"
+                                            style="color: white; font-size: x-large;"></i></a>&nbsp;
+                                    <a href="#" target="_blank"><i class="icofont-instagram"
+                                            style="color: white; font-size: x-large;"></i></a>&nbsp;
+                                    <!-- <ul>
+                                    <li><a href="#" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="icofont-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="icofont-linkedin"></i></a></li>             
+                                    <li><a href="#" target="_blank"><i class="icofont-instagram"></i></a></li>
+                                </ul>-->
+                                </div>
+                            </div>
+                            <div class="email">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget pl-40">
+                            <h3 style="border: none !important;">Services</h3>
+
+                            <ul>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="#">Internet Banking</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="#">Fund your Account</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="#">Access Loans</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="#">Open an Account</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="#">Loan Calculator</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget pl-40">
+                            <h3 style="border: none !important;">Quick Links</h3>
+
+                            <ul>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="/index">Services</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="/about">About Us</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="/blog">Contact</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="/team">Events</a></li>
+                                <li><i class="icofont-simple-right"></i> <a routerLink="/testimonial">Resources</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 style="border: none !important;">Find Us</h3>
+
+
+                            <ul class="find-us">
+                                <li>
+                                    <i class="icofont-location-pin"></i> 22, Norman Williams Street, SouthWest Ikoyi
+                                </li>
+                                <li>
+                                    <i class="icofont-phone"></i>
+                                    <a href="tel:+880123456789">+2349031111888</a>
+                                </li>
+                                <li>
+                                    <i class="icofont-ui-message"></i>
+                                    <a href="mailto:info@kiaz.com">info@bainescredit.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row  align-items-center">
+
+
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <div class="copyright-text text-end">
+                                <p>&copy;2022 Baines Credit Microfinance Bank. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="top-btn">
+            <i class="icofont-scroll-long-up"></i>
+        </div>
+    </footer>
+
+
+    <script src="/front/assets/js/jquery.js"></script>
+    <!-- <script src="/front/assets/bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="/front/assets/js/jquery.inview.min.js"></script> -->
+    <!-- <script src="/front/assets/js/portfolio.js"></script> -->
+    <!-- <script src="/front/assets/js/wow.js"></script> -->
+    <!-- <script src="/front/assets/js/lightbox.js"></script> -->
+    <!-- <script src="/front/assets/owl-carrosel/owl.carousel.min.js"></script> -->
+    <!-- <script src="/front/assets/js/jquery-ui.js"></script> -->
+
+    <!-- <script src="/front/assets/js/script.js"></script> -->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.2/jspdf.debug.js"
+        integrity="sha512-rAzZtAD9aZXKAjivLBjA5+bNjWjTtGVa62S3YFxWNikNkyMcFHxRD3RK7aLYhM0sPoAuV5OaFgF0Wc8TN/R9VQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.1.5/html2canvas.min.js"
+        integrity="sha512-oQzeC9gIS3sN3QCshVeDWiRCC2tJbR9lqj1rolUtQkGJJeA+7L54y/DVZf0+T3NDZuLOkbInugg7dVNwvcEGow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript" src="https://bainescredit.com/js/html2canvas.min.js"></script> -->
+
+    <script>
+        $(document).on('submit', '.budget-form-wrapper', function (e) {
+            e.preventDefault();
+            let form = $(this);
+
+
+            let formData = form.serializeArray().reduce(function (obj, item) {
+                obj[item.name] = item.value;
+                return obj;
+            }, {});
+
+            if (formData.frequency === "" || formData.amount === "") { return; }
+
+            let frequency = 'Weekly';
+            let annual_amount = 0;
+
+            if (formData.frequency === '1') {
+                annual_amount = parseInt(formData.amount) * 52;
+            }
+            if (formData.frequency === '2') {
+                frequency = 'Fortnightly';
+                annual_amount = parseInt(formData.amount) * 26;
+            }
+            if (formData.frequency === '4') {
+                frequency = 'Monthly';
+                annual_amount = parseInt(formData.amount) * 12;
+            }
+            if (formData.frequency === '52') {
+                frequency = 'Annually';
+                annual_amount = parseInt(formData.amount);
+            }
+
+            let amount = parseInt(formData.amount);
+
+            let item = {
+                source: formData.other_source.length > 0 ? formData.other_source : formData.source,
+                frequency: frequency,
+                amount: amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
+                annual_amount: annual_amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+            };
+
+            let new_item = "<tr>\n" +
+                "                                            <td>" + item.source + "</td>\n" +
+                "                                            <td>" + item.frequency + "</td>\n" +
+                "                                            <td>" + item.amount + "</td>\n" +
+                "                                            <td>" + item.annual_amount + "</td>\n" +
+                "                                            <td><a data-html2canvas-ignore='true' class='btn btn-danger remove-item' data-parent='" + form.attr('id') + "' data-wrapper='" + form.attr('id') + "-total' data-amount='" + annual_amount + "'>X</a></td>\n" +
+                "                                        </tr>";
+
+            $(document).find("#" + form.attr('id') + "-wrapper").append(new_item);
+            let total = $(document).find("#" + form.attr('id') + "-total");
+
+            let calc_total = parseInt(total.html().replace(/,/g, "")) + annual_amount;
+
+            total.html(calc_total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+            calcResult(calc_total, form.attr('id'));
+        });
+
+        $(document).on('click', '.remove-item', function (e) {
+            e.preventDefault();
+            let btn = $(this);
+
+            btn.prop('disabled', true);
+
+            let total = $(document).find("#" + btn.attr('data-wrapper'));
+
+            btn.parent().parent().hide();
+
+            let cal_total = parseInt(total.html().replace(/,/g, "")) - parseInt(btn.attr('data-amount'));
+
+            $(document).find('#' + btn.attr('data-wrapper')).html(cal_total);
+
+            calcResult(cal_total, btn.attr('data-parent'));
+        });
+
+
+        function calcResult(total, id) {
+            //Calc result
+            let result_row = $("#" + id + "-result");
+            result_row.find('.week-result').html((total / 52).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            result_row.find('.fortnight-result').html((total / 26).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            result_row.find('.month-result').html((total / 12).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            result_row.find('.annual-result').html(total.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+            //wrappers
+            let expense_wrapper = $('#expenses-result');
+            let surplus_wrapper = $('#surplus-result');
+
+
+            let annual_expense = 0.00;
+            let annual_income = 0.00;
+
+            $('.annual-result').each(function (index, value) {
+                //console.log($(this).attr('href'));
+                let row = $(this);
+
+                if (!row.hasClass('income')) {
+                    annual_expense += parseInt(row.html().replace(/,/g, ""));
+                }
+                else {
+                    annual_income = parseInt(row.html().replace(/,/g, ""));
+                }
+            });
+
+            // Annual Expense / Surplus
+            expense_wrapper.find('.annual-expense').html(annual_expense.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            surplus_wrapper.find('.annual-surplus').html((annual_income - annual_expense).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+            // Monthly Expense / Surplus
+            expense_wrapper.find('.month-expense').html((annual_expense / 12).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            surplus_wrapper.find('.month-surplus').html(((annual_income - annual_expense) / 12).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+            // Fortnight Expense / Surplus
+            expense_wrapper.find('.fortnight-expense').html((annual_expense / 26).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            surplus_wrapper.find('.fortnight-surplus').html(((annual_income - annual_expense) / 26).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+
+            // Weekly Expense / Surplus
+            expense_wrapper.find('.week-expense').html((annual_expense / 52).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+            surplus_wrapper.find('.week-surplus').html(((annual_income - annual_expense) / 52).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        }
+    </script>
+    <script>
+        $(document).on('click', '#save-pdf', function (e) {
+            e.preventDefault();
+
+
+
+            let section = $('#budget-planner-wrapper')[0];
+
+            html2canvas(section).then(function (canvas) {
+
+                let img = canvas.toDataURL("image/png", 1.0);
+                let $w = $actw = canvas.width;
+                let $h = $acth = canvas.height;
+                let pdf = new jsPDF("p", "mm", "a4");
+                let width = $maxw = pdf.internal.pageSize.width;
+                let height = $maxh = pdf.internal.pageSize.height;
+                if (!$maxw) $maxw = width;
+                if (!$maxh) $maxh = height;
+
+                if ($w > $maxw) {
+                    $w = $maxw;
+                    $h = Math.round($acth / $actw * $maxw);
+                }
+
+                pdf.addImage(img, 'JPEG', 10, 10, $w - 20, $h - 20);
+
+                let $count = Math.ceil($h) / Math.ceil($maxh);
+                $count = Math.ceil($count);
+
+                for (let i = 1; i <= $count - 1; i++) {
+                    let position = - $maxh * i;
+                    pdf.addPage(img, 'JPEG', 10, 10, $w - 20, $h - 20);
+                    pdf.addImage(img, 'JPEG', 10, position + 10, $w - 20, $h - 20);
+                }
+
+                pdf.save('Baines-Budget-planner-' + Date.now() + '.pdf');
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Simple Interest Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <h4>How much will you like to take as a loan?</h4>
+
+            <div class="contents">
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td class="labels">Loan Amount </td>
+                            <td>
+                                <input type="number" id="principal" oninput="compute()">
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <input type="range" min="50000" max="1000000" step="50000" value="50000" id="principal"
+                                    name="principal" oninput="SliderValue()">
+                                <span id="slide_display" value="principal">50000</span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="contents">
+                <table id="table">
+                    <tbody>
+                        <tr>
+                            <td class="labels">Loan Duration</td>
+                            <td>
+                                <select name="years" id="years">
+                                    <option value="1">1 month</option>
+                                    <option value="2">2 months</option>
+                                    <option value="3">3 months</option>
+                                    <option value="4">4 months</option>
+                                    <option value="5">5 months</option>
+                                    <option value="6">6 months </option>
+                                    <option value="7">7 months</option>
+                                    <option value="8">8 months</option>
+                                    <option value="9">9 months</option>
+                                    <option value="10">10 months</option>
+                                    <option value="10">11 months</option>
+                                    <option value="10">12 months</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <input type="range" min="1" max="12" step="1" value="1" id="slide2" name="slide2"
+                                    onchange="newSliderValue()">
+                                <span id="slide_display2">2</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+
+        <div class="grid-item">
+            <!-- <button id="compute" onclick="compute()">Calculate Interest</button> <br>
+                <div id="result">
+                </div> -->
+
+            <!-- <div>
+                    <h1>Loan Calculator</h1>
+                    <div class="input">
+                    <p>Monthly Installment: $</p>
+                      <input id="amount" type="text" value="" disabled oninput="compute()">
+                    <p>Interest Rate: %</p>
+                    <input id="interest_rate" value="" disabled oninput="compute()">
+                    <p>Total Interest Paid: </p>
+                     <input id="months" type="number" value="" disabled oninput="compute()">
+                    <p>Total Repayment: </p>
+                     <input id="payment" value="" disabled oninput="compute()">
+                  </div> -->
+
+            <!-- <div id="loncal"> -->
+            <h1>Loan Calculator</h1>
+            <div class="input">
+                <p>Monthly Installment: #</p>
+                <span id="amounts" class="space">#0</span>
+                <!-- <textarea name="" id="amounts" cols="10" rows="1" disabled oninput="class{'highlight'}"></textarea> -->
+                <!-- <input id="amount" type="number"> -->
+                <p>Interest Rate: %</p>
+                <span id="interest_rate" class="space">14%</span>
+                <!-- <input id="interest_rate" type="number"> -->
+                <p>Total Interest Paid: </p>
+                <span id="months" class="space">#0</span>
+                <!-- <input id="months" type="number"> -->
+                <p>Total Repayment: </p>
+                <span id="payments" class="space">#0</span>
+                <!-- <input id="payment"> -->
+            </div>
+
+            <!-- </div> -->
+
+        </div>
+
+    </div>
+</body>
+
+</html>
